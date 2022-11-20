@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+{% block head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1"> 
+<!--Bootstrap CSS-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="static/sheets/sample.css">
+<!--Google Fonts-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+{% endblock %}
+
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">About Me</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Profile</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="base.html">Main</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="signin.html">Sign In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="signup.html">Sign Up</a>
+                </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+     
+
+      <div class="container div2">
+        <div class="row">
+          <div class="col-sm-5">
+            <a href="home.html" alt="Make A Transaction">
+             <img src="https://thumbs.dreamstime.com/b/home-icon-trendy-flat-style-isolated-grey-background-homepage-symbol-your-web-site-design-logo-app-ui-vector-137162863.jpg" width="410" height="390">
+            </a>
+            </div>
+            <div class="col-sm-5">
+              <h1 style="margin-top: 30px;">Home page</h1>
+              <p>
+                <span>
+                  <ul class="content">
+                 <li class="content"><b>U can see what's in the home page using this link</b></li>
+                </ul>
+                 </span>
+              </p>
+              </div>
+            </div>
+           </div>
+
+
+
+           <div class="container div2">
+            <div class="row">
+              <div class="col-md-5">
+                <h1>About Page</h1>
+                  <p>
+                    <span>
+                      <ul class="content">
+                        <li class="content"><b>U can see what's in the about page using this link</b></li>
+                       </ul>
+                    </span>
+                  </p>
+                </div>
+                <div class="col-md-5">
+                  <a href="about.html" alt="Transaction History">
+                  <img src="https://e7.pngegg.com/pngimages/814/944/png-clipart-logo-graphic-design-graphics-info-symbol-emblem-text.png" width="410" height="390">
+                </a>  
+                </div>
+                </div>
+               </div>
+
+               <div class="container div2">
+                <div class="row">
+                  <div class="col-sm-5">
+                    <a href="signup.html" alt="Make A Transaction">
+                     <img src="data:image/png;base64,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" width="410" height="390">
+                    </a>
+                    </div>
+                    <div class="col-sm-5">
+                      <h1>Sign Up Page</h1>
+                      <p>
+                        <span>
+                          <ul class="content">
+                         <li class="content"><b>Create an account for yourself and enjoy the priviliges given to you</b></li>
+                        </ul>
+                         </span>
+                      </p>
+                      </div>
+                    </div>
+                   </div>
+        
+        
+        
+                   <div class="container div2">
+                    <div class="row">
+                      <div class="col-md-5">
+                        <h1>Sign In Page</h1>
+                          <p>
+                            <span>
+                              <ul class="content">
+                                <li class="content"><b>Log In to your existing account if you have one</b></li>
+                               </ul>
+                            </span>
+                          </p>
+                        </div>
+                        <div class="col-md-5">
+                          <a href="signin.html" alt="Transaction History">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbzzejrgaoq7f-_VkOu_2n_DGDCuqR4tNbNEA6jBvb_tNtC59R2SIFTdOcMaWBoCcOgZ8&usqp=CAU" width="410" height="390">
+                        </a>  
+                        </div>
+                        </div>
+                       </div>
+           
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@stackblitz/sdk@1/bundles/sdk.umd.js"></script>
+      
+      <script src="/docs/5.2/assets/js/docs.min.js"></script>
+      
+      <script>
+        
+        document.querySelectorAll('.btn-edit').forEach(btn => {
+          btn.addEventListener('click', event => {
+            const htmlSnippet = event.target.closest('.bd-code-snippet').querySelector('.bd-example').innerHTML
+      
+            
+            const classes = Array.from(event.target.closest('.bd-code-snippet').querySelector('.bd-example').classList).join(' ')
+      
+            const jsSnippet = event.target.closest('.bd-code-snippet').querySelector('.btn-edit').getAttribute('data-sb-js-snippet')
+            StackBlitzSDK.openBootstrapSnippet(htmlSnippet, jsSnippet, classes)
+          })
+        })
+      
+        StackBlitzSDK.openBootstrapSnippet = (htmlSnippet, jsSnippet, classes) => {
+          const markup = `<!doctype html>
+      <html lang="en">
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link href="https:\/\/cdn.jsdelivr.net\/npm\/bootstrap@5.2.1\/dist\/css\/bootstrap.min.css" rel="stylesheet">
+          <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+          <title>Bootstrap Example</title>
+          <${'script'} src="https:\/\/cdn\.jsdelivr\.net\/npm\/bootstrap@5\.2\.1\/dist\/js\/bootstrap\.bundle\.min\.js"></${'script'}>
+        </head>
+        <body class="p-3 m-0 border-0 ${classes}">
+      
+          <!-- Example Code -->
+      ${htmlSnippet.replace(/^/gm, '    ')}
+          <!-- End Example Code -->
+      
+        '</body>
+      </html>`
+      
+          const jsSnippetContent = jsSnippet ? '\/\/ NOTICE!!! Initially embedded in our docs this JavaScript\n\/\/ file contains elements that can help you create reproducible\n\/\/ use cases in StackBlitz for instance\.\n\/\/ In a real project please adapt this content to your needs\.\n\/\/ \u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\u002b\n\n\/\*!\n \* JavaScript for Bootstrap\u0027s docs \(https:\/\/getbootstrap\.com\/\)\n \* Copyright 2011\-2022 The Bootstrap Authors\n \* Copyright 2011\-2022 Twitter, Inc\.\n \* Licensed under the Creative Commons Attribution 3\.0 Unported License\.\n \* For details, see https:\/\/creativecommons\.org\/licenses\/by\/3\.0\/\.\n \*\/\n\n\/\* global bootstrap: false \*\/\n\n\(\(\) =\u003e \{\n  \u0027use strict\u0027\n\n  \/\/ \-\-\-\-\-\-\-\-\n  \/\/ Tooltips\n  \/\/ \-\-\-\-\-\-\-\-\n  \/\/ Instantiate all tooltips in a docs or StackBlitz page\n  document\.querySelectorAll\(\u0027\[data\-bs\-toggle=\u0022tooltip\u0022\]\u0027\)\n    \.forEach\(tooltip =\u003e \{\n      new bootstrap\.Tooltip\(tooltip\)\n    \}\)\n\n  \/\/ \-\-\-\-\-\-\-\-\n  \/\/ Popovers\n  \/\/ \-\-\-\-\-\-\-\-\n  \/\/ Instantiate all popovers in a docs or StackBlitz page\n  document\.querySelectorAll\(\u0027\[data\-bs\-toggle=\u0022popover\u0022\]\u0027\)\n    \.forEach\(popover =\u003e \{\n      new bootstrap\.Popover\(popover\)\n    \}\)\n\n  \/\/ \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\n  \/\/ Toasts\n  \/\/ \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\n  \/\/ Used by \u0027Placement\u0027 example in docs or StackBlitz\n  const toastPlacement = document\.getElementById\(\u0027toastPlacement\u0027\)\n  if \(toastPlacement\) \{\n    document\.getElementById\(\u0027selectToastPlacement\u0027\)\.addEventListener\(\u0027change\u0027, function \(\) \{\n      if \(!toastPlacement\.dataset\.originalClass\) \{\n        toastPlacement\.dataset\.originalClass = toastPlacement\.className\n      \}\n\n      toastPlacement\.className = `\$\{toastPlacement\.dataset\.originalClass\} \$\{this\.value\}`\n    \}\)\n  \}\n\n  \/\/ Instantiate all toasts in a docs page only\n  document\.querySelectorAll\(\u0027\.bd\-example \.toast\u0027\)\n    \.forEach\(toastNode =\u003e \{\n      const toast = new bootstrap\.Toast\(toastNode, \{\n        autohide: false\n      \}\)\n\n      toast\.show\(\)\n    \}\)\n\n  \/\/ Instantiate all toasts in a docs page only\n  const toastTrigger = document\.getElementById\(\u0027liveToastBtn\u0027\)\n  const toastLiveExample = document\.getElementById\(\u0027liveToast\u0027\)\n  if \(toastTrigger\) \{\n    toastTrigger\.addEventListener\(\u0027click\u0027, \(\) =\u003e \{\n      const toast = new bootstrap\.Toast\(toastLiveExample\)\n\n      toast\.show\(\)\n    \}\)\n  \}\n\n  \/\/ \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\n  \/\/ Alerts\n  \/\/ \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\n  \/\/ Used in \u0027Show live toast\u0027 example in docs or StackBlitz\n  const alertPlaceholder = document\.getElementById\(\u0027liveAlertPlaceholder\u0027\)\n  const alertTrigger = document\.getElementById\(\u0027liveAlertBtn\u0027\)\n\n  const appendAlert = \(message, type\) =\u003e \{\n    const wrapper = document\.createElement\(\u0027div\u0027\)\n    wrapper\.innerHTML = \[\n      `\u003cdiv class=\u0022alert alert\-\$\{type\} alert\-dismissible\u0022 role=\u0022alert\u0022\u003e`,\n      `   \u003cdiv\u003e\$\{message\}\u003c\/div\u003e`,\n      \u0027   \u003cbutton type=\u0022button\u0022 class=\u0022btn\-close\u0022 data\-bs\-dismiss=\u0022alert\u0022 aria\-label=\u0022Close\u0022\u003e\u003c\/button\u003e\u0027,\n      \u0027\u003c\/div\u003e\u0027\n    \]\.join\(\u0027\u0027\)\n\n    alertPlaceholder\.append\(wrapper\)\n  \}\n\n  if \(alertTrigger\) \{\n    alertTrigger\.addEventListener\(\u0027click\u0027, \(\) =\u003e \{\n      appendAlert\(\u0027Nice, you triggered this alert message!\u0027, \u0027success\u0027\)\n    \}\)\n  \}\n\n  \/\/ \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\n  \/\/ Checks \u0026 Radios\n  \/\/ \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\n  \/\/ Indeterminate checkbox example in docs and StackBlitz\n  document\.querySelectorAll\(\u0027\.bd\-example\-indeterminate \[type=\u0022checkbox\u0022\]\u0027\)\n    \.forEach\(checkbox =\u003e \{\n      if \(checkbox\.id\.includes\(\u0027Indeterminate\u0027\)\) \{\n        checkbox\.indeterminate = true\n      \}\n    \}\)\n\n  \/\/ \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\n  \/\/ Links\n  \/\/ \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\n  \/\/ Disable empty links in docs examples only\n  document\.querySelectorAll\(\u0027\.bd\-content \[href=\u0022#\u0022\]\u0027\)\n    \.forEach\(link =\u003e \{\n      link\.addEventListener\(\u0027click\u0027, event =\u003e \{\n        event\.preventDefault\(\)\n      \}\)\n    \}\)\n\n  \/\/ \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\n  \/\/ Modal\n  \/\/ \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\n  \/\/ Modal \u0027Varying modal content\u0027 example in docs and StackBlitz\n  const exampleModal = document\.getElementById\(\u0027exampleModal\u0027\)\n  if \(exampleModal\) \{\n    exampleModal\.addEventListener\(\u0027show\.bs\.modal\u0027, event =\u003e \{\n      \/\/ Button that triggered the modal\n      const button = event\.relatedTarget\n      \/\/ Extract info from data\-bs\-\* attributes\n      const recipient = button\.getAttribute\(\u0027data\-bs\-whatever\u0027\)\n\n      \/\/ Update the modal\u0027s content\.\n      const modalTitle = exampleModal\.querySelector\(\u0027\.modal\-title\u0027\)\n      const modalBodyInput = exampleModal\.querySelector\(\u0027\.modal\-body input\u0027\)\n\n      modalTitle\.textContent = `New message to \$\{recipient\}`\n      modalBodyInput\.value = recipient\n    \}\)\n  \}\n\n  \/\/ \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\n  \/\/ Offcanvas\n  \/\/ \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\n  \/\/ \u0027Offcanvas components\u0027 example in docs only\n  const myOffcanvas = document\.querySelectorAll\(\u0027\.bd\-example\-offcanvas \.offcanvas\u0027\)\n  if \(myOffcanvas\) \{\n    myOffcanvas\.forEach\(offcanvas =\u003e \{\n      offcanvas\.addEventListener\(\u0027show\.bs\.offcanvas\u0027, event =\u003e \{\n        event\.preventDefault\(\)\n      \}, false\)\n    \}\)\n  \}\n\}\)\(\)\n' : null
+          const project = {
+            files: {
+              'index.html': markup,
+              'index.js': jsSnippetContent
+            },
+            title: 'Bootstrap Example',
+            description: `Official example from ${window.location.href}`,
+            template: jsSnippet ? 'javascript' : 'html',
+            tags: ['bootstrap']
+          }
+      
+          StackBlitzSDK.openProject(project, { openFile: 'index.html' })
+        }
+      </script>    
+    </body>
+        </html>
